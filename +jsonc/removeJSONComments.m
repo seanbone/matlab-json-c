@@ -9,7 +9,7 @@ function parsedString = removeJSONComments(subjectString)
 
     % This regexp matches strings delimited by " as well as comments
     % This is to ensure that we don't match // and /**/ delimiters inside strings
-    pattern = '("[^"]*?")|(/\*.+?\*/)|(//.+?$)';
+    pattern = '("(\\.|[^"])*?")|(/\*.+?\*/)|(//.+?$)';
     [match,noMatch] = regexp(subjectString, pattern, 'match', 'split', 'lineanchors');
 
     % Iterate though the matches and only remove the ones that are not strings

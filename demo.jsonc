@@ -6,5 +6,6 @@
 	*/
 	"singleLinerInString": "//",
 	"multilinerInString": "/*",
-	"*/": "baz"
+	"*/": "baz",
+	"challenge": "what about \" this? // /* will it break? "
 }
